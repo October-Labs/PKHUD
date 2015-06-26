@@ -108,7 +108,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
         imageView.clipsToBounds = true
         imageView.contentMode = .Center
         return imageView
-        }()
+    }()
 }
 
 /// Provides a square (indeterminate) progress view.

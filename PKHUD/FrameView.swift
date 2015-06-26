@@ -21,7 +21,7 @@ internal class FrameView: UIVisualEffectView {
     }
     
     private func commonInit() {
-        backgroundColor = UIColor(white: 0.8, alpha: 0.36)
+        backgroundColor = UIColor(white: 0.8, alpha: 0.90)
         layer.cornerRadius = 9.0
         layer.masksToBounds = true
         

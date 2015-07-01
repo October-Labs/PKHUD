@@ -72,12 +72,12 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     public let titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .Center
-        label.font = UIFont.boldSystemFontOfSize(17.0)
-        label.textColor = UIColor.blackColor().colorWithAlphaComponent(0.85)
+        label.font = UIFont(name: "OpenSans", size: 18)
+        label.textColor = UIColor.blackColor()
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 3
         return label
-        }()
+    }()
 }
 
 /// Provides a square view, which you can use to display a single image.
@@ -104,7 +104,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     
     public let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.alpha = 0.85
+        imageView.alpha = 1.0
         imageView.clipsToBounds = true
         imageView.contentMode = .Center
         return imageView
@@ -206,10 +206,10 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     public let titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .Center
-        label.font = UIFont.boldSystemFontOfSize(17.0)
-        label.textColor = UIColor.blackColor().colorWithAlphaComponent(0.85)
+        label.font = UIFont(name: "OpenSans", size: 18)
+        label.textColor = UIColor.blackColor()
         return label
-        }()
+    }()
 }
 
 /// Provides a square view, which you can use to display a picture and a subtitle (beneath the image).
@@ -248,8 +248,8 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     public let subtitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .Center
-        label.font = UIFont.boldSystemFontOfSize(17.0)
-        label.textColor = UIColor.blackColor().colorWithAlphaComponent(0.85)
+        label.font = UIFont(name: "OpenSans", size: 15)
+        label.textColor = UIColor.blackColor()
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 2
         return label
@@ -294,18 +294,18 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     public let titleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .Center
-        label.font = UIFont.boldSystemFontOfSize(17.0)
-        label.textColor = UIColor.blackColor().colorWithAlphaComponent(0.85)
+        label.font = UIFont(name: "OpenSans", size: 18)
+        label.textColor = UIColor.blackColor()
         return label
-        }()
+    }()
     
     public let subtitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .Center
-        label.font = UIFont.systemFontOfSize(14.0)
-        label.textColor = UIColor.blackColor().colorWithAlphaComponent(0.7)
+        label.font = UIFont(name: "OpenSans", size: 14)
+        label.textColor = UIColor.blackColor()
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 2
         return label
-        }()
+    }()
 }

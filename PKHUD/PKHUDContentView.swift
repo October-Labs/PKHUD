@@ -105,7 +105,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
     public let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.alpha = 1.0
-        imageView.clipsToBounds = true
+        imageView.clipsToBounds = false
         imageView.contentMode = .Center
         return imageView
     }()
@@ -286,9 +286,9 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
         let quarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0)))
         let threeQuarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0 * 3.0)))
         
-        titleLabel.frame = CGRect(origin: CGPointZero, size: CGSize(width: viewWidth, height: quarterHeight))
-        imageView.frame = CGRect(origin: CGPoint(x:0.0, y:quarterHeight), size: CGSize(width: viewWidth, height: halfHeight))
-        subtitleLabel.frame = CGRect(origin: CGPoint(x:0.0, y:threeQuarterHeight), size: CGSize(width: viewWidth, height: quarterHeight))
+        imageView.frame = CGRect(origin: CGPoint(x:0.0, y:40), size: CGSize(width: viewWidth, height: halfHeight))
+        titleLabel.frame = CGRect(origin: CGPoint(x:0.0, y:halfHeight + 27), size: CGSize(width: viewWidth, height: quarterHeight))
+        subtitleLabel.frame = CGRect(origin: CGPoint(x:0.0, y:halfHeight + 52), size: CGSize(width: viewWidth, height: quarterHeight))
     }
     
     public let titleLabel: UILabel = {

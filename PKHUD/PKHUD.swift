@@ -11,18 +11,12 @@ import UIKit
 /**
   HUDController controls showing and hiding of the HUD, as well as its contents and touch response behavior.
 */
-public class PKHUD {
-    private struct Constants {
-        static let sharedHUD = PKHUD()
-    }
-    
+public class PKHUD: NSObject {
+    static let sharedHUD = PKHUD()
     private let window = Window()
-    
-    public class var sharedHUD: PKHUD {
-        return Constants.sharedHUD
-    }
-    
-    public init () {
+
+    public override init() {
+        super.init()
         userInteractionOnUnderlyingViewsEnabled = false
         window.frameView.autoresizingMask = [.FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleTopMargin, .FlexibleBottomMargin]
     }
@@ -67,8 +61,7 @@ public class PKHUD {
     }
     
     // MARK: Helper
-    
-    internal func hideAnimated() -> Void {
+    func hideAnimated() -> Void {
         hide(animated: true)
     }
 }
